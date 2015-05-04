@@ -1,0 +1,474 @@
+/* Reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul, ol li, ul li {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Layout */
+.row {
+	max-width: 70em !important;
+}
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+html {
+}
+body {
+	background-color: #f1f1f1 !important;
+	line-height: 1.5 !important;
+	font-size: 13px !important;
+	font-size: 1rem !important;
+}
+body, button, input, select, textarea {
+	font-family: "Open Sans",Arial,Helvetica !important;
+}
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+}
+dfn, cite, em, i {
+	font-style: italic;
+}
+blockquote {
+	margin: 0 1.5em;
+}
+address {
+	margin: 0 0 1.5em;
+}
+pre {
+	background: #eee;
+	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-size: 15px;
+	font-size: 0.9375rem;
+	line-height: 1.6;
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+}
+abbr, acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+mark, ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+body {
+	background: #fff; /* Fallback for when there is no custom background color defined. */
+	line-height: 1em;
+}
+h1 {
+	font-size: 25px;
+}
+h2 {
+	font-size: 22px;
+}
+h3 {
+	font-size: 20px;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+img {
+	height: auto; /* Make sure images are scaled correctly. */
+	max-width: 100%; /* Adhere to container width. */
+}
+table {
+	margin: 0 0 1.5em;
+	width: 100%;
+}
+
+/*--------------------------------------------------------------
+## Links
+--------------------------------------------------------------*/
+a {
+	color: royalblue;
+	text-decoration: none;
+}
+a:visited {
+	color: purple;
+}
+a:hover, a:focus, a:active {
+	color: midnightblue;
+	border-bottom: 1px dotted royalblue;
+}
+a:focus {
+	outline: thin dotted;
+}
+a:hover, a:active {
+	outline: 0;
+}
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar. */
+}
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*--------------------------------------------------------------
+# Site
+--------------------------------------------------------------*/
+.site-header {
+	margin: 20px 0;
+}
+.site-title a {
+  text-indent: -5000px;
+}
+
+/* Social Links */
+.bktSocial {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	margin-left: 10px;
+	outline: 0;
+	border: none;
+}
+.bktSocial:hover {
+	border: none;
+}
+.bktGithub {
+	background: transparent url(images/github-24.png) no-repeat 0 0;
+}
+.bktLinkedin {
+	background: transparent url(images/linkedin-24.png) no-repeat 0 0;
+}
+.bktFacebook {
+	background: transparent url(images/facebook-24.png) no-repeat 0 0;
+}
+
+/* Site Footer */
+.footerCont {
+	width: 100%;
+	background: #FFF;
+}
+.site-footer {
+	padding: 12px 0 20px;
+	text-align: center;
+	font-size: 14px;
+}
+
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+.sticky {
+	display: block;
+}
+.hentry {
+	margin: 0 0 1.5em;
+}
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+/* Post footer */
+.entry-footer {
+	margin: 0 -20px;
+	padding: 10px 20px;
+	font-size: 13px;
+	background: #f9f9f9;
+}
+.cat-links {
+	display: block;
+	padding-left: 20px;
+	background: transparent url(images/category-icon.png) no-repeat left center;
+}
+.tags-links {
+	display: block;
+	padding-left: 20px;
+	background: transparent url(images/tags-icon.png) no-repeat left center;
+}
+
+/* Post navigation */
+.posts-navigation {
+	width: 100%;
+	margin: 0 0 25px 0;
+}
+.nav-previous {
+	display: inline-block;
+	width: 48%;
+	padding-left: 10px;
+}
+.nav-next {
+	display: inline-block;
+	width: 50%;
+	text-align: right;
+}
+
+/*--------------------------------------------------------------
+## Asides
+--------------------------------------------------------------*/
+.blog .format-aside .entry-title,
+.archive .format-aside .entry-title {
+	display: none;
+}
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+.comment-content a {
+	word-wrap: break-word;
+}
+.bypostauthor {
+	display: block;
+}
+
+/* Comments Form */
+.comment-respond {
+	margin-top: 20px;
+	padding: 30px;
+	background-color: #FFF;
+	border-radius: 3px;
+}
+input[type="text"], input[type="email"], textarea {
+	display: block;
+	width: 100%;
+	padding: 0.44444rem;
+	background: #fafafa;
+	border: 1px solid #e4e4e4;
+	color: #777;
+	transition: border-color 0.15s linear 0s, background 0.15s linear 0s;
+}
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+ background: #FFF;
+	border: 1px solid #999;
+}
+input[type="text"], input[type="email"] {
+	height: 2.05556rem;
+}
+input[type="submit"] {
+	background: #fbfbfb;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	color: #666;
+	font-size: 13px;
+	font-weight: bold;
+	padding: 8px 40px;
+	transition: all 0.3s ease-in-out 0s;
+	cursor: pointer;
+}
+input[type="submit"]:hover {
+	border-color: #c17528;
+	color: #c17528;
+}
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+
+/* Make sure embeds and iframes fit their containers. */
+embed, iframe, object {
+	max-width: 100%;
+}
+
+/*--------------------------------------------------------------
+## Captions
+--------------------------------------------------------------*/
+.wp-caption {
+	margin-bottom: 1.5em;
+	max-width: 100%;
+}
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin: 0 auto;
+}
+.wp-caption-text {
+	text-align: center;
+}
+.wp-caption .wp-caption-text {
+	margin: 0.8075em 0;
+}
+
+/*--------------------------------------------------------------
+## Content
+--------------------------------------------------------------*/
+.post {
+	padding: 0 20px 0 20px;
+	background-color: #FFF;
+	border-radius: 3px;
+}
+.entry-title {
+	margin: 15px 110px 0 0;
+	word-wrap: break-word;
+}
+.entry-title a {
+	color: #c17528;
+	text-decoration: none;
+}
+.entry-title a:visited, .entry-title a:hover {
+	color: #0c74a6;
+	text-decoration: none;
+}
+.post .entry-header {
+	position: relative;
+}
+
+/* Post Meta - Post Date and comment */
+.postMetaInfo {
+	position: absolute;
+	top: -15px;
+	right: -20px;
+	font-size: 14px;
+	background: #f0f0f0;
+	padding: 5px 15px;
+	border-radius: 0 0 0 10px;
+}
+.entry-time {
+	margin-right: 10px;
+	text-transform: uppercase;
+}
+.entry-time strong {
+	color: #dba605;
+}
+.commentsCount a {
+	padding-left: 22px;
+	background: transparent url(images/comment-icon.png) no-repeat 0 3px;
+}
+.commentsCount a:hover {
+	border: none;
+}
+
+/* Widget common */
+.widget-area {
+	padding: 10px 0;
+	background-color: #FFF;
+	border-radius: 3px;
+	font-size: 14px;
+}
+.widget {
+	margin: 0;
+	padding: 0 20px 20px;
+	border-radius: 3px;
+}
+.widget a {
+	color: #4d4d4d;
+}
+.widget a:hover {
+	color: #4169e1;
+}
+.widget:first-child {
+	padding-top: 20px;
+}
+.widget-title {
+	color: #c17528;
+	font-size: 18px;
+	border-bottom: 1px solid #c17528;
+	margin-bottom: 12px;
+	padding-bottom: 2px;
+}
+.widget ul {
+	margin-left: 12px;
+}
+.widget li {
+	line-height: 2em;
+}
+
+/* TAG cloud */
+.tagcloud {
+	padding: 0 12px;
+}
