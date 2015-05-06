@@ -25,8 +25,9 @@
 		<header id="masthead" class="site-header" role="banner">
 				<div class="row">
 						<div class="site-branding columns large-8 medium-8 small-5">
-								<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/images/logo-wb.png" /></a></h1>
-								<h2 style="display:none;" class="site-description"><?php bloginfo( 'description' ); ?></h2>
+								<a title="Web Blog" href="<?php echo esc_url( home_url( '/' ) ); ?>"><h1 class="site-title">Web Blog</h1></a>
+								<h1 style="display: none;"><?php bloginfo( 'name' ); ?></h1>
+								<h2 style="display: none;" class="site-description"><?php bloginfo( 'description' ); ?></h2>
 						</div>
 						<div class="columns large-4 medium-4 small-7">
 								<div class="socialCont">
