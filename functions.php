@@ -27,7 +27,7 @@ add_action( 'widgets_init', 'bktheme_widgets_init' );
  * Enqueue scripts and styles.
  */
 function bktheme_scripts() {
-	wp_enqueue_style('google-sans', "http://fonts.googleapis.com/css?family=Open+Sans:400,600");
+	//wp_enqueue_style('google-sans', "http://fonts.googleapis.com/css?family=Open+Sans:400,600");
 	wp_enqueue_style( 'bktheme-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'my-style', get_template_directory_uri().'/lib/foundation/foundation.min.css', false, '', 'screen');
 

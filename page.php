@@ -39,8 +39,4 @@ get_header(); ?>
 		</div>		
 </div>
 
-<div class="row">
-		<div class="columns large-12">
-				<?php get_footer(); ?>
-		</div>
-</div>
+<?php get_footer(); ?>

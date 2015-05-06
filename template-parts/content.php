@@ -21,7 +21,7 @@
 								<?php endif; ?>
 						</header><!-- .entry-header -->
 
-						<div class="entry-content">
+						<div class="entry-content clearfix">
 								<?php
 									/* translators: %s: Name of current post */
 									the_content( sprintf(
